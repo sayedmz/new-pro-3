@@ -1,0 +1,12 @@
+#center {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+#center div {
+  font-size: 50px;
+  color: #ff2200;
+}

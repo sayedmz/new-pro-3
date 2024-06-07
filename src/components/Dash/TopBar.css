@@ -1,0 +1,64 @@
+#top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 40px;
+  box-shadow: 1px 1px 30px 1px #ff2770;
+}
+#top h2 {
+  color: rgb(237, 227, 227);
+  background-color: #ff2770;
+  font-style: italic;
+  border-radius: 20px;
+  transition: 2s;
+}
+#top h2:hover {
+  color: rgb(236, 167, 167);
+  background-color: #660626;
+  cursor: pointer;
+  border-radius: 10px;
+  scale: 1.09;
+  rotate: -360deg;
+}
+
+/*side bar*/
+#container {
+  display: flex;
+}
+#sideBar {
+  height: 100vh;
+  padding: 20px;
+  width: 25%;
+  border-right: 2px solid #f36d9a;
+}
+.sideLink {
+  color: black;
+  font-size: 22px;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  transition: 0.5s;
+  padding: 10px;
+}
+.sideLink:hover {
+  background-color: #ff2770;
+  border-radius: 10px;
+  color: white;
+}
+.active {
+  background-color: #ff2770;
+  border-radius: 10px;
+  color: white;
+}
+.fa-solid {
+  color: #286dd4;
+  margin-right: 10px;
+}
+
+.sideLink:hover .fa-solid {
+  color: white;
+}
+.active .fa-solid {
+  color: white;
+}

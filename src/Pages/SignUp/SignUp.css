@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+#signUp {
+  color: rgb(119, 116, 116);
+  letter-spacing: 2px;
+  margin-bottom: 7px;
+  margin-top: 7px;
+  text-align: center;
+}
+#box {
+  z-index: 0;
+}
+
+#inputBox {
+  /* box-shadow: 2px 2px 50px 0px #80a9e6, 2px 2px 50px 0px #ff2770; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  height: auto;
+  border-radius: 8px;
+  transition: 0.3s;
+  overflow: hidden;
+  z-index: 1;
+}
+#form {
+  width: 97%;
+  height: 97%;
+
+  z-index: 5;
+  transition: 5s;
+}
+
+.input {
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  transition: 0.3s;
+  margin-bottom: 8px;
+  margin-top: 5px;
+}
+#inputBox::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 400px;
+
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #80a9e6,
+    #81a9e4,
+    #7395c7
+  );
+  transform-origin: left top;
+  animation: animate 6s linear infinite;
+}
+#inputBox::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 400px;
+
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #80a9e6,
+    #81a9e4,
+    #7395c7
+  );
+  transform-origin: left top;
+  animation: animate 6s linear infinite;
+  animation-delay: -3s;
+}
+.borderLine {
+  position: absolute;
+  top: 0;
+  inset: 0;
+}
+.borderLine::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 400px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #ff2770,
+    #ff2770,
+    #ff2770
+  );
+  transform-origin: left top;
+  animation: animate 6s linear infinite;
+  animation-delay: -1.5s;
+}
+.borderLine::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 400px;
+  background: linear-gradient(
+    0deg,
+    transparent,
+    transparent,
+    #ff2770,
+    #ff2770,
+    #ff2770
+  );
+  transform-origin: left top;
+  animation: animate 6s linear infinite;
+  animation-delay: -4.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#form label {
+  color: rgb(0, 0, 0);
+  padding: 2px;
+}
+
+.input:focus {
+  border: 2px solid #86b7fe;
+}
+.input:hover {
+  scale: 1.03;
+  background-color: #86b7fe;
+  box-shadow: 1px 1px 4px 1px #ff2770;
+}
+
+#inputBox button {
+  outline: none;
+  border: none;
+  width: 40%;
+  background-color: #ff2770;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid white;
+  font-weight: bold;
+  margin: 10px;
+}
+#inputBox button:hover {
+  border-color: white;
+  border: 2px solid #ff2770;
+  color: black;
+  width: 80%;
+  background-color: transparent;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  box-shadow: 1px 1px 4px 1px #ff2770;
+}
+.error {
+  font-size: 12px;
+  color: rgb(61, 2, 2);
+  margin-left: 8px;
+  margin-bottom: 8px;
+}

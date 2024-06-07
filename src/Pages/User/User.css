@@ -1,0 +1,57 @@
+#user {
+  padding: 20px;
+}
+#user table {
+  width: 100%;
+  text-align: center;
+  table-layout: fixed;
+  border-collapse: collapse;
+}
+#user table thead tr {
+  background-color: #ff2770;
+  font-style: italic;
+}
+#user table th,
+td {
+  border: 1px solid #f96a9a;
+  height: 25px;
+}
+#user table tr:nth-child(even) {
+  background-color: #f8cbda;
+}
+#user table tbody tr:nth-child(odd) {
+  background-color: #faa4c1;
+}
+#user table td {
+  height: 30px;
+}
+#user table td {
+  overflow: hidden;
+  color: #29020f;
+  text-overflow: ellipsis;
+}
+
+#btn {
+  outline: none;
+  border: none;
+  width: 40%;
+  background-color: #ff2770;
+  padding: 10px 20px;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.4s;
+  border: 2px solid white;
+  font-weight: bold;
+  margin: 10px;
+}
+#btn:hover {
+  border-color: white;
+  border: 2px solid #ff2770;
+  color: black;
+  width: 80%;
+  background-color: transparent;
+  letter-spacing: 2px;
+  opacity: 0.9;
+  box-shadow: 1px 1px 4px 1px #ff2770;
+}
