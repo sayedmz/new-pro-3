@@ -35,7 +35,7 @@ export const Register = () => {
       // console.log(`it is token ${token}`);
       // console.log(userDetails);
       user.setAuth({ token, userDetails });
-      nav("/dashboard");
+      nav("/dashboard"); // بعد عملية التسجيل بنجاح يوجهنا الى المكان المحدد
     } catch (err) {
       if (err.response.status === 422) {
         setEmailError(true);

@@ -13,7 +13,7 @@ export default function PersistLogin() {
   //cookie  npm i universal-cookie
   const cookie = new Cookies();
   const getToken = cookie.get("Bearer");
-  console.log(getToken);
+  // console.log(getToken);
 
   // send refresh token
   useEffect(() => {
