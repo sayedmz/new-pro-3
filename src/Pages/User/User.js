@@ -10,6 +10,7 @@ export const User = () => {
 
   const context = useContext(Users);
   const token = context.auth.token;
+
   console.log(context);
   useEffect(() => {
     axios
@@ -29,7 +30,7 @@ export const User = () => {
       `http://127.0.0.1:8000/api/user/delete/${id}`,
       {
         headers: {
-          Authorization: "bearer " + token,
+          Authorization: "Bearer " + token,
         },
       }
     );

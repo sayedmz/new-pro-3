@@ -5,7 +5,7 @@ import { Users } from "../context/context";
 import LoadingScreen from "../../components/Loading/Loading";
 import Cookies from "universal-cookie";
 
-export function PersistLogin() {
+export default function PersistLogin() {
   // get User
   const context = useContext(Users);
   const token = context.auth.token;
@@ -24,10 +24,12 @@ export function PersistLogin() {
             headers: { Authorization: "Bearer " + getToken },
           })
           .then((data) => {
-            cookie.set("Bearer", data.data.token);
+            // console.log(data);
+            cookie.set("Bearer", data.data.token, { path: "/" });
             context.setAuth((prev) => {
               // خلي كل شيئ عل حاله ولكن تةكن قم بتغييرها على الشكل التالي
-              return { ...prev, token: data.data.token };
+              // return { ...prev, token: data.data.token };
+              return { userDetails: data.data.user, token: data.data.token };
             });
           });
       } catch (err) {

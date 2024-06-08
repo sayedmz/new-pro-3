@@ -30,7 +30,7 @@ export const Register = () => {
         password_confirmation: passwordConfirmation,
       });
       const token = res.data.data.token;
-      cookie.set("Bearer", token);
+      cookie.set("Bearer", token, { path: "/" }); //, { path: "/" }   فيني نضعها او لا
       const userDetails = res.data.data.user;
       // console.log(`it is token ${token}`);
       // console.log(userDetails);

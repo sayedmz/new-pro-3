@@ -4,7 +4,7 @@ import { Users } from "../../Pages/context/context";
 import Header from "../../components/Header/Header";
 import { useNavigate } from "react-router-dom";
 import Cookies from "universal-cookie";
-export const Register = () => {
+export const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -28,7 +28,7 @@ export const Register = () => {
         password: password,
       });
       const token = res.data.data.token;
-      cookie.set("Bearer", token);
+      cookie.set("Bearer", token, { path: "/" });
       const userDetails = res.data.data.user;
       // console.log(`it is token ${token}`);
       // console.log(userDetails);
@@ -97,4 +97,4 @@ export const Register = () => {
     </div>
   );
 };
-export default Register;
+export default Login;

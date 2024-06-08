@@ -7,7 +7,7 @@ import { UpdateUser } from "./Pages/UpdateUser/UpdateUser";
 import CreateUsers from "./Pages/create Users/CreateUsers";
 import Login from "./Pages/Login/Login";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
-import { PersistLogin } from "./Pages/PersistLogin.js/PersistLogin";
+import PersistLogin from "./Pages/PersistLogin/PersistLogin";
 
 export default function App() {
   return (
