@@ -30,8 +30,7 @@ export const Login = () => {
       const token = res.data.data.token;
       cookie.set("Bearer", token, { path: "/" });
       const userDetails = res.data.data.user;
-      // console.log(`it is token ${token}`);
-      // console.log(userDetails);
+
       user.setAuth({ token, userDetails });
       nav("/dashboard");
     } catch (err) {
