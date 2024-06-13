@@ -1,3 +1,4 @@
+// php artisan migrate:fresh   لتحدسث المعلومات في  bankend
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";

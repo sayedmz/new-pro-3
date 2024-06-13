@@ -8,6 +8,10 @@ import CreateUsers from "./Pages/create Users/CreateUsers";
 import Login from "./Pages/Login/Login";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import PersistLogin from "./Pages/PersistLogin/PersistLogin";
+import { About } from "./Pages/About/About";
+import Products from "./Pages/Products/Products";
+import NewProduct from "./Pages/Products/NewProduct";
+import UpdateProduct from "./Pages/Products/UpdateProduct";
 
 export default function App() {
   return (
@@ -16,6 +20,7 @@ export default function App() {
         <Route path="/" element={<Home />} />
         <Route path="/register" element={<SignUp />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/About" element={<About />} />
 
         <Route element={<PersistLogin />}>
           <Route element={<RequireAuth />}>
@@ -23,6 +28,9 @@ export default function App() {
               <Route path="users" element={<User />} />
               <Route path="user/create" element={<CreateUsers />} />
               <Route path="users/:id" element={<UpdateUser />} />
+              <Route path="products" element={<Products />} />
+              <Route path="product/create" element={<NewProduct />} />
+              <Route path="products/:id" element={<UpdateProduct />} />
             </Route>
           </Route>
         </Route>
