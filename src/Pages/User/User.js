@@ -11,7 +11,7 @@ export const User = () => {
   const context = useContext(Users);
   const token = context.auth.token;
 
-  console.log(context);
+  // console.log(context);
   useEffect(() => {
     axios
       .get("http://127.0.0.1:8000/api/user/show", {

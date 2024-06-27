@@ -12,6 +12,9 @@ import { About } from "./Pages/About/About";
 import Products from "./Pages/Products/Products";
 import NewProduct from "./Pages/Products/NewProduct";
 import UpdateProduct from "./Pages/Products/UpdateProduct";
+import Car from "./Pages/Car/Car";
+import NewCar from "./Pages/Car/NewCar";
+import UpdateCar from "./Pages/Car/Update";
 
 export default function App() {
   return (
@@ -28,9 +31,14 @@ export default function App() {
               <Route path="users" element={<User />} />
               <Route path="user/create" element={<CreateUsers />} />
               <Route path="users/:id" element={<UpdateUser />} />
+
               <Route path="products" element={<Products />} />
               <Route path="product/create" element={<NewProduct />} />
               <Route path="products/:id" element={<UpdateProduct />} />
+
+              <Route path="cars" element={<Car />} />
+              <Route path="car/createCar" element={<NewCar />} />
+              <Route path="Cars/:id" element={<UpdateCar />} />
             </Route>
           </Route>
         </Route>

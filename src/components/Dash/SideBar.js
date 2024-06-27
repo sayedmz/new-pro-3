@@ -24,6 +24,14 @@ export const SideBar = () => {
         <NavLink className="sideLink" to="/dashboard/product/create">
           <i className="fa-solid fa-file-circle-plus"></i> New Product
         </NavLink>
+
+        <NavLink className="sideLink" to="/dashboard/cars">
+          <i class="fa-solid fa-car"></i> Car
+        </NavLink>
+
+        <NavLink className="sideLink" to="/dashboard/car/createCar">
+          <i class="fa-solid fa-cart-plus"></i> New Car
+        </NavLink>
       </div>
     </>
   );
