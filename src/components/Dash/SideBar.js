@@ -26,11 +26,11 @@ export const SideBar = () => {
         </NavLink>
 
         <NavLink className="sideLink" to="/dashboard/cars">
-          <i class="fa-solid fa-car"></i> Car
+          <i className="fa-solid fa-car"></i> Car
         </NavLink>
 
         <NavLink className="sideLink" to="/dashboard/car/createCar">
-          <i class="fa-solid fa-cart-plus"></i> New Car
+          <i className="fa-solid fa-cart-plus"></i> New Car
         </NavLink>
       </div>
     </>

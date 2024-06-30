@@ -1,0 +1,49 @@
+#containerCar {
+  padding: 20px;
+  background: radial-gradient(#80a9e6, white, #9d3477);
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+#cards {
+  background-color: #e191c4;
+  height: fit-content;
+  transition: 1.5s;
+  border-radius: 10px;
+}
+#cards:hover {
+  background-color: #e20e94;
+  scale: 1.05;
+}
+.item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+#cards img {
+  text-align: center;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+}
+#cards h2 {
+  padding-left: 5px;
+  font-size: medium;
+  color: white;
+  padding-bottom: 10px;
+}
+#cards p {
+  padding-left: 5px;
+  font-size: 13px;
+  color: white;
+  width: 150px;
+  flex-wrap: wrap;
+}
+.para {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

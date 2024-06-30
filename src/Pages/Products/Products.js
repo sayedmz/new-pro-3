@@ -44,7 +44,7 @@ export const Products = () => {
   }
   const showProducts = products.map((product, index) => (
     <tr key={index}>
-      <td>{index + 1}</td> <td>{product.title}</td>{" "}
+      <td>{index + 1}</td> <td>{product.title}</td>
       <td>{product.description}</td>
       <td>
         <Link to={`${product.id}`}>

@@ -3,8 +3,8 @@ import SignUp from "./Pages/SignUp/SignUp";
 import { Home } from "./Pages/Home/Home";
 import { Dashboard } from "./Pages/Dashboard/Dashboard";
 import { User } from "./Pages/User/User";
-import { UpdateUser } from "./Pages/UpdateUser/UpdateUser";
-import CreateUsers from "./Pages/create Users/CreateUsers";
+import { UpdateUser } from "./Pages/User/UpdateUser";
+import CreateUsers from "./Pages/User/CreateUsers";
 import Login from "./Pages/Login/Login";
 import RequireAuth from "./Pages/RequireAuth/RequireAuth";
 import PersistLogin from "./Pages/PersistLogin/PersistLogin";
@@ -14,7 +14,7 @@ import NewProduct from "./Pages/Products/NewProduct";
 import UpdateProduct from "./Pages/Products/UpdateProduct";
 import Car from "./Pages/Car/Car";
 import NewCar from "./Pages/Car/NewCar";
-import UpdateCar from "./Pages/Car/Update";
+import UpdateCar from "./Pages/Car/UpdateCar";
 
 export default function App() {
   return (

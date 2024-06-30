@@ -90,14 +90,14 @@ export const UpdateProduct = () => {
             {/* {accept && emailError && (
               <p className="error">Email is already been taken</p>
             )} */}
-            <label htmlFor="password">Image:</label>
+            <label htmlFor="Image">Image:</label>
             <input
               style={{ border: "2px solid #80a9e6" }}
               className="input"
               type="file"
-              name="password"
-              id="password"
-              placeholder="password...."
+              name="Image"
+              id="Image"
+              placeholder="Image...."
               onChange={(e) => setImage(e.target.files.item(0))}
             />
             {/* {password.length < 8 && accept && (
